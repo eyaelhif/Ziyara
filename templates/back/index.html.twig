@@ -1,0 +1,22 @@
+{% extends 'back.html.twig' %}
+
+{% block css %}
+ {{ parent() }} 
+{% endblock %}
+
+{% block body %}
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <body>
+        {{ parent() }}
+    </body>
+    </html>
+
+    {% block footer %}
+ {{ parent() }}
+{% endblock %}
+
+
+{% endblock %}
+

@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}Ziyara{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% block css %}
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ asset('front/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/jquery.timepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
+{% endblock %} 
+
+</head>
+<body>
+{% block navbar %}
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Ziyara</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html.twig" class="nav-link">Acceuil</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Packs</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Guides</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Visites</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Transport</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Boutique</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+	{% endblock %}
+	
+
+	{% block body %}
+	<div class="hero-wrap js-fullheight" style="background-image: url('front/images/back.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+				<div class="col-md-7 ftco-animate">
+					<h1 class="mb-4">Réservez votre visite guidée dès aujourd'hui et commencez à explorer la Tunisie !</h1>
+				</div>
+				<a href="https://www.youtube.com/watch?v=H__i5LKFVXg" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+					<span class="fa fa-play"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+		<section class="ftco-section services-section">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+						<div class="w-100">
+							<span class="subheading">Bienvenue à Ziyara</span>
+							<h2 class="mb-4"> Il est temps de commencer votre aventure.</h2>
+							<p>Préparez-vous à vivre une expérience inoubliable en explorant les merveilles cachées de notre magnifique région avec nos visites guidées exclusives. </p>
+							<p>Que vous soyez passionné d'histoire, de culture, de gastronomie ou d'aventure, nos guides expérimentés vous emmèneront dans un voyage fascinant à travers des sites emblématiques, des trésors cachés et des anecdotes captivantes. Rejoignez-nous pour découvrir les secrets les mieux gardés de notre destination et laissez-vous imprégner de son charme unique. Réservez dès maintenant et laissez-nous vous guider vers une aventure inoubliable !</p>
+							<p><a href="#" class="btn btn-primary py-3 px-4">Chercher des destinations</a></p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-1 d-block img" style="background-image: url(front/images/back3.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Activités</h3>
+										<p>Une multitude d'activités passionnantes adaptées à tous les goûts et à tous les âges.</p>
+									</div>
+								</div>      
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-2 d-block img" style="background-image: url(front/images/back4.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Des visites guidées</h3>
+										<p>Des visites guidées exceptionnelles, conçues pour vous offrir une immersion authentique et enrichissante dans notre destination</p>
+									</div>
+								</div>    
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-3 d-block img" style="background-image: url(front/images/back5.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Des Guides</h3>
+										<p>Des guides expérimentés et passionnés sont là pour vous faire découvrir les secrets les mieux gardés de notre région</p>
+									</div>
+								</div>      
+							</div>
+							<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+								<div class="services services-1 color-4 d-block img" style="background-image: url(front/images/back6.jpg);">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+									<div class="media-body">
+										<h3 class="heading mb-3">Une boutique</h3>
+										<p>une sélection unique d'articles artisanaux et authentiques, parfaits pour prolonger le souvenir de votre voyage avec nous.</p>
+									</div>
+								</div>      
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section testimony-section bg-bottom" style="background-image: url(front/images/back2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center pb-4">
+					<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+						<span class="subheading">témoignage</span>
+						<h2 class="mb-4">Feedback des touristes</h2>
+					</div>
+				</div>
+				<div class="row ftco-animate">
+					<div class="col-md-12">
+						<div class="carousel-testimony owl-carousel">
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Une expérience inoubliable ! Notre guide était exceptionnellement compétent et passionné. Il nous a emmenés dans un voyage fascinant à travers les rues historiques de la ville. Nous avons découvert des anecdotes incroyables et des trésors cachés que nous naurions jamais trouvés seuls. Merci pour cette expérience mémorable !</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(front/images/person_1.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Mahdi Bouadila</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Je recommande vivement cette visite guidée ! Notre guide était non seulement très instructif, mais aussi très amusant. Nous avons ri, appris et vraiment apprécié chaque instant. Si vous voulez découvrir une ville sous un nouvel angle, cette visite est un must !</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(front/images/person_2.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Sekri Balkis</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Une façon fantastique de découvrir une ville. Notre guide était extrêmement sympathique et compétent. Il nous a guidés à travers les quartiers pittoresques, partageant des histoires fascinantes et des faits intéressants tout au long de la visite. C'était une expérience enrichissante que je recommande à tous ceux qui visitent cette ville</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(front/images/person_3.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Rayen Jlassi</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Jai fait plusieurs visites guidées dans différentes villes, mais celle-ci était de loin la meilleure. Notre guide était incroyablement passionné par l'histoire locale et avait une manière captivante de raconter les événements passés. C'était comme revivre le passé à travers ses récits. Merci pour cette expérience enrichissante !</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(front/images/person_1.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Boughzou cyrine</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-wrap py-4">
+									<div class="text">
+										<p class="star">
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</p>
+										<p class="mb-4">Une journée inoubliable ! La visite guidée était bien organisée et le guide était très compétent. Nous avons pu découvrir des monuments emblématiques et des endroits cachés que nous naurions jamais trouvés seuls. Cétait une expérience enrichissante et je la recommande vivement à tous ceux qui souhaitent explorer cette ville magnifique.</p>
+										<div class="d-flex align-items-center">
+											<div class="user-img" style="background-image: url(front/images/person_2.jpg)"></div>
+											<div class="pl-3">
+												<p class="name">Mohamed Jomaa</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		
+		{% endblock %}
+ 
+		<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(front/images/bg_3.jpg);">
+		{% block footer %}
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md pt-5">
+						<div class="ftco-footer-widget pt-md-5 mb-4">
+							<h2 class="ftco-heading-2">à propos</h2>
+							<p>Explorez avec nous. Découvrez lessence de chaque ville grâce à nos guides passionnés.</p>
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+								<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md pt-5 border-left">
+						<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+							<h2 class="ftco-heading-2">Infromation</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="py-2 d-block">Enquête en ligne</a></li>
+								<li><a href="#" class="py-2 d-block">Questions Générales</a></li>
+								<li><a href="#" class="py-2 d-block">Conditions de Réservation</a></li>
+								<li><a href="#" class="py-2 d-block">Confidentialité et Politique</a></li>
+								<li><a href="#" class="py-2 d-block">Politique de Remboursement</a></li>
+								<li><a href="#" class="py-2 d-block">Appelez-nous</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md pt-5 border-left">
+						<div class="ftco-footer-widget pt-md-5 mb-4">
+							<h2 class="ftco-heading-2">Have a Questions?</h2>
+							<div class="block-23 mb-3">
+								<ul>
+									<li><span class="icon fa fa-map-marker"></span><span class="text">Avenue Habib Bourguiba, Tunis, Tunisie</span></li>
+									<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+216 20 436 874</span></a></li>
+									<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">ziyara.tn</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				{% endblock %}
+			</footer>
+			
+			
+			
+
+			<!-- loader -->
+			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  
+
+			
+		</body>
+		</html>
+
+		    {% block js %}
+    <script src="{{ asset('front/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery-migrate-3.0.1.min.js') }}"></script>
+    <script src="{{ asset('front/js/popper.min.js') }}"></script>
+    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.animateNumber.min.js') }}"></script>
+    <script src="{{ asset('front/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('front/js/scrollax.min.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
+    <script src="{{ asset('front/js/google-map.js') }}"></script>
+    <script src="{{ asset('front/js/main.js') }}"></script>
+    {% endblock %}
