@@ -1,0 +1,18 @@
+{% extends 'back.html.twig' %}
+{% block css %}
+{{ parent() }}
+{%endblock%}
+
+{% block title %}Commande new{% endblock %}
+{% block navbar %}
+{{ parent() }}
+{%endblock%}
+
+{% block body %}
+{{ parent() }}
+    <h1>Create new Commande</h1>
+
+    {{ include('commande/_form.html.twig') }}
+
+    <a href="{{ path('app_commande_index') }}">back to list</a>
+{% endblock %}

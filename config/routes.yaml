@@ -1,3 +1,103 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+app_produit_index:
+    path: /produit
+    controller: App\Controller\ProduitController::index
+    methods: ['GET']
+
+app_produit_new:
+    path: /produit/new
+    controller: App\Controller\ProduitController::new
+    methods: ['GET', 'POST']
+
+app_produit_show:
+    path: /produit/{id}
+    controller: App\Controller\ProduitController::show
+    methods: ['GET']
+
+app_produit_edit:
+    path: /produit/{id}/edit
+    controller: App\Controller\ProduitController::edit
+    methods: ['GET', 'POST']
+
+app_produit_delete:
+    path: /produit/{id}
+    controller: App\Controller\ProduitController::delete
+    methods: ['POST']
+
+
+app_categorie_index:
+    path: /categorie
+    controller: App\Controller\CategorieController::index
+    methods: ['GET']
+
+app_categorie_new:
+    path: /categorie/new
+    controller: App\Controller\CategorieController::new
+    methods: ['GET', 'POST']
+
+app_categorie_show:
+    path: /categorie/{id}
+    controller: App\Controller\CategorieController::show
+    methods: ['GET']
+
+app_categorie_edit:
+    path: /categorie/{id}/edit
+    controller: App\Controller\CategorieController::edit
+    methods: ['GET', 'POST']
+
+app_categorie_delete:
+    path: /categorie/{id}
+    controller: App\Controller\CategorieController::delete
+    methods: ['POST']
+
+app_code_index:
+    path: /code
+    controller: App\Controller\CodeController::index
+    methods: ['GET']
+
+app_code_new:
+    path: /code/new
+    controller: App\Controller\CodeController::new
+    methods: ['GET', 'POST']
+
+app_code_show:
+    path: /code/{id}
+    controller: App\Controller\CodeController::show
+    methods: ['GET']
+
+app_code_edit:
+    path: /code/{id}/edit
+    controller: App\Controller\CodeController::edit
+    methods: ['GET', 'POST']
+
+app_code_delete:
+    path: /code/{id}
+    controller: App\Controller\CodeController::delete
+    methods: ['POST']
+
+app_commande_index:
+    path: /commande
+    controller: App\Controller\CommandeController::index
+    methods: ['GET']
+
+app_commande_new:
+    path: /commande/new
+    controller: App\Controller\CommandeController::new
+    methods: ['GET', 'POST']
+
+app_commande_show:
+    path: /commande/{id}
+    controller: App\Controller\CommandeController::show
+    methods: ['GET']
+
+app_commande_edit:
+    path: /commande/{id}/edit
+    controller: App\Controller\CommandeController::edit
+    methods: ['GET', 'POST']
+
+app_commande_delete:
+    path: /commande/{id}
+    controller: App\Controller\CommandeController::delete
+    methods: ['POST']

@@ -1,0 +1,18 @@
+{% extends 'back.html.twig' %}
+{% block css %}
+{{ parent() }}
+{%endblock%}
+
+{% block title %}Categorie New{% endblock %}
+{% block navbar %}
+{{ parent() }}
+{%endblock%}
+
+{% block body %}
+{{ parent() }}
+    <h1>Create new Categorie</h1>
+
+    {{ include('categorie/_form.html.twig') }}
+
+    <a href="{{ path('app_categorie_index') }}">back to list</a>
+{% endblock %}

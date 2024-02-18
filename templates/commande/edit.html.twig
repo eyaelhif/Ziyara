@@ -1,0 +1,20 @@
+{% extends 'back.html.twig' %}
+{% block css %}
+{{ parent() }}
+{%endblock%}
+
+{% block title %}Commande edit{% endblock %}
+{% block navbar %}
+{{ parent() }}
+{%endblock%}
+
+{% block body %}
+{{ parent() }}
+    <h1>Edit Commande</h1>
+
+    {{ include('commande/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_commande_index') }}">back to list</a>
+
+    {{ include('commande/_delete_form.html.twig') }}
+{% endblock %}

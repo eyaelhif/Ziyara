@@ -1,0 +1,48 @@
+{% extends 'back.html.twig' %}
+{% block css %}
+{{ parent() }}
+{%endblock%}
+
+{% block title %}code promo{% endblock %}
+{% block navbar %}
+{{ parent() }}
+{%endblock%}
+
+{% block body %}
+{{ parent() }}
+    <h1>Code index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Reduction</th>
+                <th>Date_debut</th>
+                <th>Date_fin</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for code in codes %}
+            <tr>
+                <td>{{ code.id }}</td>
+                <td>{{ code.code }}</td>
+                <td>{{ code.reduction }}</td>
+                <td>{{ code.dateDebut }}</td>
+                <td>{{ code.dateFin }}</td>
+                <td>
+                    <a href="{{ path('app_code_show', {'id': code.id}) }}">show</a>
+                    <a href="{{ path('app_code_edit', {'id': code.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_code_new') }}">Create new</a>
+{% endblock %}
